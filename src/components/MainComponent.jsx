@@ -15,15 +15,14 @@ function MainComponent() {
         axios
             .get(postsUrl + "/posts/")
             .then((res) => {
-                //console.log(res.data)
-                setPublishedPosts(res.data.filter((post) => {
-                    if (post.published == true) {
-                        return post;
-                    }
+                console.log(res.data.data)
+                setPublishedPosts(res.data.data.filter((post) => {
+                    return post;
+
                 }))
             })
             .catch((error) => {
-                console.log("error")
+                console.log(error)
             })
             .finally(() => {
 

@@ -21,7 +21,7 @@ function CardComponent({ el, onDelete }) {
                         })} */}
                     </ul>
                 </div>
-                <p>{el.content}</p>
+                <p>{el.content.substring(0, 200)}...</p>
                 <Link className='btn btn-warning' to={`/posts/${el.id}`}>Vedi dettaglio</Link>
                 <ButtonDeleteComponent onDelete={() => onDelete(el.id)} />
             </div>
