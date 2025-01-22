@@ -14,11 +14,11 @@ function CardComponent({ el, onDelete }) {
                 <div className="d-flex">
                     <h3>{el.title}</h3>
                     <ul className="d-flex">
-                        {/* {el.tags.map((tag) => {
+                        {el.tags.map((tag) => {
                             <li className="post-tags" key={tag}>
                                 {tag}
                             </li>
-                        })} */}
+                        })}
                     </ul>
                 </div>
                 <p>{el.content.substring(0, 200)}...</p>

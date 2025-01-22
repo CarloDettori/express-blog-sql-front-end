@@ -214,7 +214,7 @@ function FormPage() {
                 </ul>
                 <br />
                 {/*post publishing */}
-                <p className="form-title">New Post Publishing Status </p>
+                {/* <p className="form-title">New Post Publishing Status </p>
                 <div className="d-flex" >
                     <p className="go-to-dx">Is new post published?</p>
                     <input
@@ -229,7 +229,7 @@ function FormPage() {
                         yes
                     </label>
 
-                </div>
+                </div> */}
                 <br />
 
                 <button type="submit" className="btn btn-primary">Submit</button>
